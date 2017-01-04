@@ -12,10 +12,11 @@ import java.util.Scanner;
 
 public class TimeClient {
 	private static int remotePort=8888;
-	private static int localPort=9999;
+	//private static int localPort=9999;
 
 	public static void main(String[] args) throws UnknownHostException, IOException {
-		Socket socket=new Socket(InetAddress.getLocalHost(),remotePort,InetAddress.getLocalHost(),localPort);
+		//Socket socket=new Socket(InetAddress.getLocalHost(),remotePort,InetAddress.getLocalHost(),localPort);
+		Socket socket=new Socket(InetAddress.getLocalHost(),remotePort);
 		BufferedReader in=new BufferedReader(new InputStreamReader(socket.getInputStream()));
 		PrintWriter out=new PrintWriter(new OutputStreamWriter(socket.getOutputStream()),true);
 		Scanner s=new Scanner(System.in);

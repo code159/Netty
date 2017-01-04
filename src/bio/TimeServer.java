@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
-
+//BIO 时间服务端
 public class TimeServer {
 	private static int port=8888;
 
